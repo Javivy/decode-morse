@@ -44,3 +44,12 @@ def decode_word(word)
   end
   decoded_word
 end
+
+def decode_phrase(phrase)
+  new_phrase = ''
+  word = phrase.split('   ')
+  word.each do |w|
+    new_phrase += "#{decode_word(w)} "
+  end
+  new_phrase
+end
