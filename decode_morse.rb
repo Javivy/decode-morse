@@ -53,3 +53,10 @@ def decode_phrase(phrase)
   end
   new_phrase
 end
+
+letter = decode_char('-.--')
+puts letter
+word = decode_word('-- -.--') # Should return MY
+puts "word: #{word}"
+phrase = decode_phrase('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+puts phrase
